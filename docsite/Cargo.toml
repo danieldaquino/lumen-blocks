@@ -1,6 +1,5 @@
 [package]
 name = "docsite"
-version = "0.2.0-wip"
 authors = ["Daniel D’Aquino <daniel@daquino.me>"]
 edition = "2021"
 
