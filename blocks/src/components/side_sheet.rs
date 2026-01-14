@@ -28,7 +28,7 @@ impl SideSheetSide {
 
 // Context for sharing state between side sheet components
 #[derive(Clone)]
-struct SideSheetContext {
+pub struct SideSheetContext {
     is_open: Signal<bool>,
     side: SideSheetSide,
 }
