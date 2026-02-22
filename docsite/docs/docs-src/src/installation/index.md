@@ -1,6 +1,6 @@
 # Installation
 
-This guide will walk you through the process of installing and setting up Lumen Blocks (version `v0.2.0`) in your Dioxus project.
+This guide will walk you through the process of installing and setting up Lumen Blocks (version `v0.3.0`) in your Dioxus project.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ git clone https://github.com/Leaf-Computer/lumen-blocks-starter.git my-lumen-app
 Navigate to the newly created project directory and ensure you are on a compatible revision:
 ```bash
 cd my-lumen-app
-git checkout v0.2.0
+git checkout v0.3.0
 ```
 
 Start the development server:
@@ -41,7 +41,7 @@ For an existing project, you have two options for installing Lumen Blocks:
 Add Lumen Blocks to your `Cargo.toml`:
 ```toml
 # Change revision as needed
-lumen-blocks = { git = "https://github.com/Leaf-Computer/lumen-blocks.git", tag = "v0.2.0" }
+lumen-blocks = { git = "https://github.com/Leaf-Computer/lumen-blocks.git", tag = "v0.3.0" }
 ```
 
 Create or update a `tailwind.css` file in your project's root directory, with the following content:
@@ -200,8 +200,8 @@ module.exports = {
   content: [
     "./src/**/*.{rs,html,css}",
     // Include Lumen Blocks components
-    // Note: The `2675507` on the path is there to match the Lumen Blocks version in `Cargo.toml`. If you update Lumen Blocks on your project, you should update this path as well with the first 7 digits of the commit hash.
-    `${process.env.HOME}/.cargo/git/checkouts/lumen-blocks-*/2675507/blocks/src/**/*.rs`
+    // Note: The `557eda2` on the path is there to match the Lumen Blocks version in `Cargo.toml`. If you update Lumen Blocks on your project, you should update this path as well with the first 7 digits of the commit hash.
+    `${process.env.HOME}/.cargo/git/checkouts/lumen-blocks-*/257eda2/blocks/src/**/*.rs`
   ],
   theme: {
     extend: {},
